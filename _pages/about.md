@@ -1,18 +1,13 @@
 ---
 layout: about
-title: About Me
-author: Johnathan Smith
-image: assets/images/about/author.jpg
-signature: assets/images/about/signature.png
+title: Hakkımda
+author: Arduino Türk Batu
+image: 
+signature: 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat.
+2011'de Adana'da dünyaya geldim. Adana'da bazı okulları okudum. Sonra 2016'da Antalya'ya taşındık. Orada da birçok okul okudum.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident.
+2018'de belki en sevdiğim an olabilir. Çünkü 2018'in sonbahara açılan kapılarında bir adet kanal oluşturdum: "Arduino Türk Batu". Hâlâ kanalımın adı aynen duruyor. Kanal adından da anlaşılabildiği gibi ilk önce Arduino videoları çekmeye başladım. Videolarımın %70'den (yüzde yetmiş) fazla Arduino videoları ile dolu.
 
-Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
+Ayrıca, uygulama, websitesi, oyun vb. şeyler ile ilgilenmeye başladım. Bununla ilgili videoları çekmeye devam ediyorum.
