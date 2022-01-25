@@ -2,8 +2,7 @@
 layout: about
 title: Hakkımda
 author: Arduino Türk Batu
-image: 
-signature: 
+image: https://yt3.ggpht.com/ytc/AKedOLSBczkcFOS3S4vqvJbWZwKvArJeb0Wj7UUu5j_mqg=s88-c-k-c0x00ffffff-no-rj
 ---
 
 2011'de Adana'da dünyaya geldim. Adana'da bazı okulları okudum. Sonra 2016'da Antalya'ya taşındık. Orada da birçok okul okudum.
