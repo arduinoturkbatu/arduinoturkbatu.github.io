@@ -60,15 +60,15 @@ blurb-btn-name: daha fazla
 # Work Process Section
 work-process:
   - title : "Arduino"
-    icon : "https://cdn-icons-png.flaticon.com/512/908/908742.png"
+    icon : "assets/images/icons/arduino.png"
     content : "Arduino, açık kaynaklı olan bir programlama kartıdır."
     
   - title : "HTML5"
-    icon : "https://cdn-icons.flaticon.com/png/512/1073/premium/1073666.png?token=exp=1643131601~hmac=8a9dbf984074af68fabe6edb449dd010"
+    icon : "assets/images/icons/html.png"
     content : "HTML (Hyper Text Markup Language), web siteleri için temel koddur."
     
   - title : "Scratch"
-    icon : "https://cdn-icons-png.flaticon.com/512/919/919846.png"
+    icon : "assets/images/icons/scratch.png"
     content : "Scratch, genelde çocuk odaklı bir websitesidir. Bu websitesi sayesinde oyunlar, hikayeler, animasyonlar yapılır."
 
 
