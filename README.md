@@ -1,10 +1,5 @@
 # Arduino Türk Batu'nun Github üzerine kurulmuş websitesine hoş geldiniz, boş gelmediniz! 😀
 ---
-## Website İçeriği:
-- [Arduino Türk Batu'nun Github üzerine kurulmuş websitesine hoş geldiniz, boş gelmediniz! 😀](#arduino-türk-batunun-github-üzerine-kurulmuş-websitesine-hoş-geldiniz-boş-gelmediniz-)
-- [Ben kimim?](#ben-kimim)
-- [Video türlerim](#video-türlerim)
-- [Makalelerim](#makalelerim)
 ## Ben kimim?
 Merhaba, ben Batu. 2011'de Adana'da dünyaya gelen, 2016'da Antalya'ya geçen bir kodlama uzmanıyım. 2018'de açmış olduğu YouTube kanalında açtığı günden beri videolar çekiyorum. İlk başlarda Arduino kodlamaya başladım. Sonra HTML, CSS, JavaScript, .VS, mBlock, Scratch gibi kodlama dilleri ve oluşturma platformlarıyla ilgilenmeye başladım. Şimdiki videolarımı [YouTube kanalımdan](https://www.youtube.com/channel/UCwGhWHqg4HuKZ0C9j4vjGxg/videos) görebilirsiniz.
 ## Video türlerim
