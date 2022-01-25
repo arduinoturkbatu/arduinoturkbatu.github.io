@@ -13,8 +13,8 @@ copyright: Copyright &copy; 2022-♾️ Designed by [Themefisher](https://themef
 menu:
 - {name: HAKKIMDA, link: '/about'}
 - {name: BLOG, link: '/blog'}
-- {name: İLETİŞİM, link: '/contact'}
 - {name: PROJELER, link: '/projects'}
+- {name: İLETİŞİM, link: '/contact'}
 
 
 #-------------------------------
