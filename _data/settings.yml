@@ -14,6 +14,7 @@ menu:
 - {name: HAKKIMDA, link: '/about'}
 - {name: BLOG, link: '/blog'}
 - {name: İLETİŞİM, link: '/contact'}
+- {name: PROJELER, link: '/projects'}
 
 
 #-------------------------------
