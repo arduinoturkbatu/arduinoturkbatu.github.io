@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+# Arduino Türk Batu'nun Github üzerine kurulmuş websitesine hoş geldiniz, boş gelmediniz! 😀
+---
+## Ben kimim?
+Merhaba, ben Batu. 2011'de Adana'da dünyaya gelen, 2016'da Antalya'ya geçen bir kodlama uzmanıyım. 2018'de açmış olduğu YouTube kanalında açtığı günden beri videolar çekiyorum. İlk başlarda Arduino kodlamaya başladım. Sonra HTML, CSS, JavaScript, .VS, mBlock, Scratch gibi kodlama dilleri ve oluşturma platformlarıyla ilgilenmeye başladım. Şimdiki videolarımı [YouTube kanalımdan](https://www.youtube.com/channel/UCwGhWHqg4HuKZ0C9j4vjGxg/videos) görebilirsiniz.
+## Video türlerim
+Tür | İlgili link
+-- | --
+🌟 #Enİyiler | https://www.youtube.com/playlist?list=PLVdkFG00DhbOUdWpxsd39z9UlEQfLP5DT
+♾️ Arduino Projeleri | https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG
+🧑‍💻 HTML | https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa
+🔴 Canlı Yayınlar | https://www.youtube.com/playlist?list=PLVdkFG00DhbPf233K2SxnzaqBV-UbePdf
+🐻‍ mBlock | https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf
+🐈 Scratch | https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq
+## Makalelerim
+> Herhangi bir makale yazılmamış.
 
-You can use the [editor on GitHub](https://github.com/arduinot/arduinot.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arduinot/arduinot.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Okuma sonuna geldiniz! Mutlu kodlamalar!
+## [Yukarı çıkın](https://arduinot.github.io)
