@@ -134,9 +134,9 @@ portfolio-items:
     - type: "web"
       
  - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
-  url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
-  portfolio-type:
-    - type: "scratch"
+   url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
+   portfolio-type:
+     - type: "scratch"
       
 - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
   url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
