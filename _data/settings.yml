@@ -107,38 +107,42 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
-    type : "design"
+    title : "ARDUINO",
+    type : "arduino"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
+    title : "WEB",
+    type : "web"
   }
 - {
-    title : "ILLUSTRATION",
-    type : "illustration"
+    title : "SCRATCH",
+    type : "scratch"
+  }
+- {
+    title: "MBLOCK"
+    type: "mblock"
   }
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-     - type: "ARDUINO"
+     - type: "arduino"
       
   - image : "assets/images/portfolio/item-2.png"
     url: "#"
     portfolio-type:
-      - type: "WEB"
+      - type: "web"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "SCRATCH"
+      - type: "scratch"
       
   - image : "assets/images/portfolio/item-6.png"
     url: "#"
     portfolio-type:
-      - type: "MBLOCK"
+      - type: "mblock"
 
 
 #-------------------------------
