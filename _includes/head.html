@@ -34,4 +34,12 @@
   {% if site.data.settings.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
+  
+  <script>
+        if ('serviceWorker' in navigator) {
+        	window.addEventListener('load', function () {
+        		navigator.serviceWorker.register('assets/js/sw.js?v=3');
+        	});
+        }
+    </script>
 </head>
