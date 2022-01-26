@@ -8,11 +8,11 @@ description: Arduino Türk Batu'nun öz websitesine ziyaret etmeyen kaldı mı?
 email: batuakyar07@gmail.com
 phone: NAN
 address: NAN
-copyright: Copyright &copy; 2022-♾️ Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
+copyright: Copyright &copy; 2022-∞ [Themefisher](https://themefisher.com) tarafından tasarlandı & [Getjekyllthemes](https://getjekyllthemes.com) tarafından kodlandı.
 
 menu:
 - {name: HAKKIMDA, link: '/about'}
-- {name: BLOG, link: '/blog'}
+- {name: MAKALELER, link: '/blog'}
 - {name: PROJELER, link: '/projects'}
 - {name: İLETİŞİM, link: '/contact'}
 
