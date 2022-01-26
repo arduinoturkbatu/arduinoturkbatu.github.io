@@ -128,6 +128,7 @@ portfolio-items:
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
     portfolio-type:
      - type: "arduino"
+
   - image : "assets/images/porfolio/item-2.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     portfolio-type:
@@ -143,7 +144,7 @@ portfolio-items:
     portfolio-type:
       - type: "mblock"
 
-  - image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
+  - image : "tulyacss/assets/img/logo.png"
     url: "https://arduinoturkbatu.github.io/tulyacss"
     portfolio-type:
       - type: "web"
