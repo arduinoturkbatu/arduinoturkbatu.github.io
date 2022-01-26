@@ -23,10 +23,26 @@
           </li>
         {% endfor %}
         <li class="nav-item {{ class }}">
-          <button class="nav-link btn btn-primary btn-sm" style="border:1px solid #ffffff" onclick="alert('this feature in the future');">
+          <button class="nav-link btn btn-primary btn-sm" style="border:1px solid #ffffff;display:none;" id="install-app">
             <i class="ti-download"></i>
           </button>
         </li>
+        <script>
+          const installButton = document.getElementById('install-app');
+          let beforeInstallPromptEvent
+          window.addEventListener("beforeinstallprompt", function(e) {
+              e.preventDefault();
+              beforeInstallPromptEvent = e
+              installButton.style.display = 'block'
+              installButton.addEventListener("click", function() {
+                  e.prompt();
+              });
+              installButton.hidden = false;
+          });
+          installButton.addEventListener("click", function() {
+              beforeInstallPromptEvent.prompt();
+          });
+      </script>
       </ul>
     </div>
   </nav>
