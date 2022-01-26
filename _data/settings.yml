@@ -89,19 +89,19 @@ skills:
 # Portfolio Home Section
 portfolio-home-items:
   - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
     
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+  - image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+  - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
     
-  - image : "assets/images/portfolio/item-4.png"
-    url: "#"
+  - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
     
-  - image : "assets/images/portfolio/item-5.png"
-    url: "#"
+  - image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
+    url: "https://arduinoturkbatu.github.io/tulyacss"
 
 
 # Portfolio Page
@@ -125,24 +125,29 @@ portfolio-label:
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
     portfolio-type:
      - type: "arduino"
       
-  - image : "assets/images/portfolio/item-2.png"
-    url: "#"
+  - image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     portfolio-type:
       - type: "web"
       
-  - image : "assets/images/portfolio/item-3.png"
-    url: "#"
+   - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
     portfolio-type:
       - type: "scratch"
       
-  - image : "assets/images/portfolio/item-6.png"
-    url: "#"
+  - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
     portfolio-type:
       - type: "mblock"
+
+  - image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
+    url: "https://arduinoturkbatu.github.io/tulyacss"
+    portfolio-type:
+      - type: "web"
 
 
 #-------------------------------
