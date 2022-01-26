@@ -91,7 +91,7 @@ portfolio-home-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
     
-  - image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
+  - image : "assets/images/porfolio/item-2.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     
   - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
@@ -100,7 +100,7 @@ portfolio-home-items:
   - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
     
-  - image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
+  - image : "tulyacss/assets/img/logo.png"
     url: "https://arduinoturkbatu.github.io/tulyacss"
 
 
