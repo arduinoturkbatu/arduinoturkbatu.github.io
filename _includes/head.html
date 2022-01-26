@@ -5,6 +5,14 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.data.settings.description}}{%endif%}">
+  <link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Arduino Türk Batu">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" sizes="128x128" href="/pwa/img/128x128.png">
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="/pwa/img/128x128.png">
+<link rel="icon" sizes="192x192" href="/pwa/img/192x192.png">
+<link rel="icon" sizes="128x128" href="/pwa/img/128x128.png">
     
   {% if site.author %}
   <meta name="author" content="{{ . }}">
