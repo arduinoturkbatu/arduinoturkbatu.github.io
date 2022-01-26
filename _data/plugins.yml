@@ -3,7 +3,7 @@ css:
   - "/assets/plugins/bootstrap/bootstrap.min.css"
   - "/assets/plugins/themify-icons/themify-icons.css"
   - "/assets/plugins/slick/slick.css"
-  - "https://raw.githubusercontent.com/locomotivemtl/locomotive-scroll/master/dist/locomotive-scroll.css"
+  - "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
 
 
 ################ JS Plugins ######################
@@ -12,4 +12,4 @@ js:
   - "/assets/plugins/bootstrap/bootstrap.min.js"
   - "/assets/plugins/shuffle/shuffle.min.js"
   - "/assets/plugins/slick/slick.min.js"
-  - "https://raw.githubusercontent.com/locomotivemtl/locomotive-scroll/master/dist/locomotive-scroll.min.js"
+  - "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"
