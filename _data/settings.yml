@@ -119,7 +119,7 @@ portfolio-label:
     type : "scratch"
   }
 - {
-    title: "MBLOCK"
+    title: "mBlock",
     type: "mblock"
   }
 
