@@ -94,10 +94,10 @@ portfolio-home-items:
   - image : "assets/images/porfolio/item-2.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     
-  - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
+  - image : "assets/images/porfolio/item-3.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
     
-  - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
+  - image : "assets/images/porfolio/item-4.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
     
   - image : "tulyacss/assets/img/logo.png"
@@ -128,17 +128,17 @@ portfolio-items:
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
     portfolio-type:
      - type: "arduino"
-  - image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
+  - image : "assets/images/porfolio/item-2.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
     portfolio-type:
       - type: "web"
       
-  - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
+  - image : "assets/images/porfolio/item-3.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
     portfolio-type:
       - type: "scratch"
       
-  - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
+  - image : "assets/images/porfolio/item-4.jpg"
     url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
     portfolio-type:
       - type: "mblock"
