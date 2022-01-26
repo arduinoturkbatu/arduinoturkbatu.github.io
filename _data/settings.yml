@@ -5,7 +5,7 @@ title: Arduino Türk Batu
 logo: assets/images/atblong.png 
 author: arduinoturkbatu
 description: Arduino Türk Batu'nun öz websitesine ziyaret etmeyen kaldı mı?
-email: batuakyar07@gmail.com
+mail: batuakyar07@gmail.com
 phone: NAN
 address: NAN
 copyright: Copyright &copy; 2022-∞ [Themefisher](https://themefisher.com) tarafından tasarlandı & [Getjekyllthemes](https://getjekyllthemes.com) tarafından kodlandı.
@@ -124,29 +124,29 @@ portfolio-label:
   }
 
 portfolio-items:
-- image : "assets/images/portfolio/item-1.png"
-  url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
-  portfolio-type:
-   - type: "arduino"
-- image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
-  url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
-  portfolio-type:
-    - type: "web"
+  - image : "assets/images/portfolio/item-1.png"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbNsIGd-kxYxLZHAEGR2pnjG"
+    portfolio-type:
+     - type: "arduino"
+  - image : "https://i.ytimg.com/vi/X8eryWWqyLE/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBw7ur7CVKig-DpnqvlRIEpNDlWAQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbM5yU6ZWNGUF4MmHZcxqGGa"
+    portfolio-type:
+      - type: "web"
       
- - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
-   url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
-   portfolio-type:
-     - type: "scratch"
+  - image : "https://i.ytimg.com/vi/hrLXWeZSZHQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDAoeWe7lEBXNpFva1qVjzDy3JZfQ"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbPsOMm5BoDXW9njO2Jz18yq"
+    portfolio-type:
+      - type: "scratch"
       
-- image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
-  url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
-  portfolio-type:
-    - type: "mblock"
+  - image : "https://i.ytimg.com/vi/-iVkE5BjZ7o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDVXdc4RJEQCEUMSflfs4iKR04s1g"
+    url: "https://www.youtube.com/playlist?list=PLVdkFG00DhbMGiGPOKnkPKLXAj8bXkTmf"
+    portfolio-type:
+      - type: "mblock"
 
-- image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
-  url: "https://arduinoturkbatu.github.io/tulyacss"
-  portfolio-type:
-    - type: "web"
+  - image : "https://arduinoturkbatu.github.io/tulyacss/assets/img/logo.png"
+    url: "https://arduinoturkbatu.github.io/tulyacss"
+    portfolio-type:
+      - type: "web"
 
 
 #-------------------------------
