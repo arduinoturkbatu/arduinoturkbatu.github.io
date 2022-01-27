@@ -149,6 +149,25 @@ portfolio-items:
     portfolio-type:
       - type: "web"
 
+#-------------------------------
+# Testimonials Section
+
+testimonial-items:
+  - name: "E2E Solutions"
+    image: "assets/images/testimonial/client-1.jpg"
+    designation : "YouTube Kanalı/Kullanıcısı"
+    content : "Nice work<br>Arduino Turk Batu...As we are sharing similar Interest and content on our channel ... I will support to full extent ...and I am your subscriber no 129th always...All the best from <strong>#E2Esolutions</strong>"
+    
+  - name: "Sefa H."
+    image: "assets/images/testimonial/client-2.jpg"
+    designation: "YouTube Kanalı/Kullanıcısı"
+    content: "Bravo,<br><br>Her geçen gün daha fazla başarılı oluyorsun.<br>Merakla gelecek videolarını bekliyoruz<br><br>Emeğin için Teşekkürler."
+    
+  - name: "Dilşad Refizade İlkokulu 1- I Sınıfı"
+    image: "assets/images/testimonial/client-3.jpg"
+    designation: "YouTube Kanalı/Kullanıcısı"
+    content: "Aferim Batu. Başarıların devamını dileriz. "
+
 
 #-------------------------------
 # Exprerience Section
