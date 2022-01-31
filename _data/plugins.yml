@@ -13,3 +13,5 @@ js:
   - "/assets/plugins/shuffle/shuffle.min.js"
   - "/assets/plugins/slick/slick.min.js"
   - "https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"
+  - "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+  - "/assets/js/cursor.js"
