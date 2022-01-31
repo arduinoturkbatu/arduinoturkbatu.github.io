@@ -7,17 +7,7 @@ layout: compress
 {% include head.html %}
 
 <body> 
-  <div data-scroll-container>
-    {% include header.html %}
-
-    {{ content }}
-  
-    {% include contact-section.html %}
-  
-    {% include footer.html %}
-  </div>
-  
-  <div class="cursor">
+    <div class="cursor">
   <div class="cursor__ball cursor__ball--big ">
     <svg height="30" width="30">
       <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
@@ -30,6 +20,16 @@ layout: compress
     </svg>
   </div>
 </div>
+  
+  {% include header.html %}
+  <div data-scroll-container>
+
+    {{ content }}
+  
+    {% include contact-section.html %}
+  
+    {% include footer.html %}
+  </div>
   
 </body>
 
