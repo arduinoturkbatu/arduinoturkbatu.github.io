@@ -44,7 +44,7 @@ a:focus {
 a,
 button,
 select {
-  cursor: pointer;
+  cursor: none;
   transition: .2s ease;
 
   &:focus {
