@@ -7,7 +7,7 @@ author: Arduino Türk Batu
 tags:   Web
 ---
 
-**Arduino Türk Batu; yeni hâli, yeni websitesi ile karşınıza çıkıyor.**
+**Arduino Türk Batu; yeni hâli, yeni websitesi ile karşınıza çıkıyor. Karşınızda, yeni websitemiz.**
 
 Evet! Bu gördüğünüz websitesi **%100** orijinal. Bu websitesi sayesinde, daha düzgün bir şekilde videolarımızla ilgili olan tüm yazılara kolayca ulaşabileceksiniz!
 
