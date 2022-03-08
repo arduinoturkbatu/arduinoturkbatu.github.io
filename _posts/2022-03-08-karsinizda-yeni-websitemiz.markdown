@@ -2,7 +2,7 @@
 layout: post
 title:  Karşınızda Yeni Web Sitemiz!
 date:   2022-03-08 20:54:31 +0300
-image:  /assets/images/blog/post-5.jpg
+image:  /assets/images/blog/pNUMo1.jpg
 author: Admin
 tags:   website
 ---
