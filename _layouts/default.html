@@ -54,9 +54,11 @@ layout: compress
 }
     </style>
     <script>
-        if (document.readyState == "complete") {
-  document.querySelector(".intro").classList.add("remove");
-}
+        document.onreadystatechange = () => {
+  if (document.readyState === "complete") {
+    document.querySelector(".intro").classList.add("remove");
+  }
+};
 
     </script>
   
