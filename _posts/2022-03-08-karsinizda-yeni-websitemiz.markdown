@@ -16,10 +16,13 @@ Github'ın Github Pages ve Jekyll Themes websitesinin güzel tasarımcısı Them
 - Eski websitemiz olan https://arduinoturkbatu.wordpress.com ile arada çok fark var. Yepyeni marka rengimiz olan "purple#41228e" tonu ile yepyeni bir deneyim sağlıyor.
 - Ayrıca yeni websitemiz, imlecinizi websiteyi kullanırken güzel yuvarlaklarla vakit geçirmenizi sağlıyor.
 - Bu yeni tasarımıyla, kullanıcılara daha iyi bir deneyim sağlıyor.
+- 
 > Yumuşak geçişler
 - Çok az websitenin sahip olduğu bir özellik: Websiteyi kaydırmayı denediğinizde öyle bir yumuşak kaydırma imkanı sağlıyor ki bu da websitemizi "nadir" özellikler taşıyor.
+
 > İletişim: Her zaman
 - İstekler, geri bildirimler ve sponsorluklar. Hepsi her web sayfasının altında sizleri bekliyor.
+
 > Mobil destekli
 - Şu anda üzerinde çalışmakta olduğumuz web uygulama özelliği ile Android'ten iOS'e, Windows'tan macOS'e her türlü web tarayıcısı destekleyen platformda sizleri uygulama indirme özelliğimiz karşılıyor. ***(*)***
 
@@ -37,6 +40,6 @@ ve SİZLERE: Bu websiteye baktığınız için,
 > TEŞEKKÜR EDERİM!
 
 
+<br />
 
-
-> (*) Bazı web tarayıcılarında bu özellik görülmeyebilir.
+> () Bazı web tarayıcılarında bu özellik görülmeyebilir.
