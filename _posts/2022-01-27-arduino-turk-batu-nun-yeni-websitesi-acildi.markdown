@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Arduino Türk Batu'nun Yeni Websitesi Açıldı!
-date:   2022-01-27 22:32:32
+date:   2022-08-03 20:57:00 +0300
 image:  /assets/images/blog/post-2.jpg
 author: Arduino Türk Batu
 tags:   Web
