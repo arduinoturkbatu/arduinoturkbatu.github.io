@@ -33,10 +33,10 @@ Github'ın Github Pages ve Jekyll Themes websitesinin güzel tasarımcısı Them
 - Wordpress'in tema ve diğer özellikleri çok az. Bu yüzden daha geniş alana gitmeye karar verdim: HTML
 
 ### Teşekkürler:
-GITHUB: Github Pages ile website özelliği için,
-JEKYLL: Temalar için,
-THEMEFISHER: Bu güzel temayı yaptığı için,
-ve SİZLERE: Bu websiteye baktığınız için,
+- GITHUB: Github Pages ile website özelliği için,
+- JEKYLL: Temalar için,
+- THEMEFISHER: Bu güzel temayı yaptığı için,
+- ve SİZLERE: Bu websiteye baktığınız için,
 > TEŞEKKÜR EDERİM!
 
 
