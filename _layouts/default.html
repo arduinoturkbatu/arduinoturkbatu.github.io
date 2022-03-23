@@ -140,9 +140,12 @@ main {
     <script>
         document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    document.querySelector(".intro").classList.add("remove");
+	  setTimeout(waitformin, 7000);
   }
 };
+	    function waitformin() {
+		    document.querySelector(".intro").classList.add("remove");
+	    }
 
     </script>
   
