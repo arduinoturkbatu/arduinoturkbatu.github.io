@@ -22,32 +22,34 @@
             <a class="nav-link" href="{{ link.link }}">{{ link.name }}</a>
           </li>
         {% endfor %}
-        <li class="nav-item {{ class }}">
-          <button class="nav-link btn btn-primary btn-sm" style="border:1px solid #ffffff;display:none;" id="install-app">
-            <i class="ti-download"></i>
-          </button>
-        </li>
         <li class="nav- item {{ class }}">
           <script async src="https://cse.google.com/cse.js?cx=25de8dc8b1cc0437d"></script>
           <div class="gcse-search" style="display:inline-block"></div>
         </li>
-        <script>
-          const installButton = document.getElementById('install-app');
-          let beforeInstallPromptEvent
-          window.addEventListener("beforeinstallprompt", function(e) {
-              e.preventDefault();
-              beforeInstallPromptEvent = e
-              installButton.style.display = 'block'
-              installButton.addEventListener("click", function() {
-                  e.prompt();
-              });
-              installButton.hidden = false;
-          });
-          installButton.addEventListener("click", function() {
-              beforeInstallPromptEvent.prompt();
-          });
-      </script>
+                <li class="nav-item {{ class }}">
+          <button class="nav-link btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:1px solid #ffffff;" id="install-app">
+            <i class="ti-download"></i>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
 </header>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        This feature is on creating... Maybe available on tomorrow.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger">DELETE ME</button>
+      </div>
+    </div>
+  </div>
+</div>
