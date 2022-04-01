@@ -36,11 +36,20 @@
     
     <script>
       function howto() {
-      w2popup.open({
-        title: 'This feature not available yet.',
-        body: '<div class="w2ui-centered">Please visit tomorrow</div>'
-    });
+      $('#popup').w2popup();
       }
     </script>
+    
+    <div id="popup" style="width: 600px; height: 400px; overflow: hidden">
+    <div rel="title">
+        Title
+    </div>
+    <div rel="body">
+        body ...
+    </div>
+    <div rel="buttons">
+        <input type="button" value="Switch to Popup 2" onclick="$('#popup2').w2popup()"/>
+    </div>
+</div>
   </nav>
 </header>
