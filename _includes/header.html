@@ -27,11 +27,18 @@
           <div class="gcse-search" style="display:inline-block"></div>
         </li>
                 <li class="nav-item {{ class }}">
-          <button class="nav-link btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:1px solid #ffffff;" id="install-app">
+          <button class="nav-link btn btn-primary btn-sm" onclick="howto()" style="border:1px solid #ffffff;" id="install-app">
             <i class="ti-download"></i>
           </button>
         </li>
       </ul>
     </div>
+    
+    <script>
+      w2popup.open({
+        title: 'This feature not available yet.',
+        body: '<div class="w2ui-centered">Please visit tomorrow</div>'
+    });
+    </script>
   </nav>
 </header>
