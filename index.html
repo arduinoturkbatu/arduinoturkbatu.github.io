@@ -8,6 +8,7 @@
     <meta name="description" content="Discover the world of tech coding at Batu Akyar's website! Learn, code, and enhance your skills with our expert tutorials and insights.">
     <title>Batu Akyar</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css' integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==' crossorigin='anonymous'/>
 </head>
 <body>
@@ -16,6 +17,15 @@
         <button class="clsBtn" onclick="document.getElementById('changelogModal').classList.remove('show')">&times;</button>
         <h1 class="sectionTitle">&blacktriangleright;changelog</h1>
         <ul>
+            <li>
+                <b>&beta;.2.2</b><br/>
+                <ol>
+                    <li>Some visual updates created.</li>
+                    <li>Theme switching mode started.</li>
+                    <li>Homepage section deleted.</li>
+                    <li>Projects section turned into Works section.</li>
+                </ol>
+            </li>
             <li>
                 <b>&beta;.2.1</b><br/>
                 <ol>
@@ -36,7 +46,7 @@
                     </li>
 
                     <li>
-                        Homepage, about, projects, blog, contact sections created.
+                        Homepage, about, works, blog, contact sections created.
                     </li>
 
                     <li>
@@ -107,11 +117,11 @@
                     <span></span>
                 </label>
                 <div class="droped">
-                    <a href="#homepage" class="active">homepage</a>
-                    <a href="#about">about</a>
-                    <a href="#projects">projects</a>
-                    <a href="#blog">blog</a>
-                    <a href="#contact">contact me</a>
+                    <a href="#homepage" class="current" style="display: hidden !important;opacity:0 !important;pointer-events: none !important;height: 0 !important;width: 0 !important;padding:0 !important;margin: 0 !important;">hidden</a>
+                    <a href="#about"><sup>01.</sup>about</a>
+                    <a href="#works"><sup>02.</sup>works</a>
+                    <a href="#blog"><sup>03.</sup>blog</a>
+                    <a href="#contact"><sup>04.</sup>contact me</a>
                 </div>
                 <a href=""><label for="options" style="cursor: pointer;">&blacktriangledown;</label></a>
             </div>
@@ -136,6 +146,7 @@
     <main>
         <div class="row-container" id="homepage">
             <div class="img-container">
+                <span class="itsme">It's me!</span>
                 <img src="assets/images/avatar.png" alt="Avatar">
             </div>
             <div class="content-container">
@@ -207,8 +218,8 @@
             </div>
         </div>
 
-        <div class="projects-section" id="projects">
-            <h1 class="sectionTitle">&blacktriangleright;projects</h1>
+        <div class="works-section" id="works">
+            <h1 class="sectionTitle">&blacktriangleright;works</h1>
             <div class="cards">
                 <div class="card">
                     <h1 translate="no">Browser Alp</h1>
@@ -317,7 +328,7 @@
                     <h1>Welcome!</h1>
                     <p>
                         <b>This is our all-new blog, includes themes and languages to make readabilty more good!</b> <br/>
-                        Hello everyone! It's me, Batu and I will introduice you to my new website. I'll mainly write blogs to here, my website, but you can send a email or see my projects! Also, with this website, you can toggle the color mode (light/dark) so you can protect your eyes <span class="emoji">👀</span>, and you can change language to read our website very well! <span class="emoji">🗺️🌍🌎🌏</span> <br/>
+                        Hello everyone! It's me, Batu and I will introduice you to my new website. I'll mainly write blogs to here, my website, but you can send a email or see my works! Also, with this website, you can toggle the color mode (light/dark) so you can protect your eyes <span class="emoji">👀</span>, and you can change language to read our website very well! <span class="emoji">🗺️🌍🌎🌏</span> <br/>
                         I maded this website only with one page; because sometimes the speed of internet can be low, so I asked myself "Why not making everything in a page then?". Now, here we are! A very compact webpage with faster loading speed.
                     </p>
                     <div class="seeon">

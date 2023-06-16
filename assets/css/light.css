@@ -1,0 +1,11 @@
+:root {
+    --background: rgb(246, 244, 239);
+    --background5: rgba(246,244,239,0.5);
+    --background8: rgba(246,244,239,0.8);
+    --accent: rgb(208, 198, 169);
+    --accentBlurred: rgb(235, 230, 218);
+    --primary: rgb(14, 236, 151);
+    --primary5: rgba(14,236,151,0.5);
+    --secondary: rgb(241, 19, 104);
+    --white: #000;
+}

@@ -1,30 +1,43 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&family=Noto+Color+Emoji&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+:root {
+  --background: rgb(9, 11, 16);
+  --background5: rgba(9,11,16,0.5);
+  --background8: rgba(9,11,16,0.8);
+  --accent: rgb(47, 57, 86);
+  --accentBlurred: rgb(20, 25, 37);
+  --primary: rgb(14, 236, 151);
+  --primary5: rgba(14,236,151,0.5);
+  --secondary: rgb(241, 19, 104);
+  --white: #fff;
+}
+
 span.key {
-  background-color: rgb(20, 25, 37);
+  background-color: var(--accentBlurred);
   border-radius: 5px;
   padding: 2px 10px !important;
   margin-top: 4px !important;
-  font-family: "Roboto Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-family: "Noto Sans Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 ::-moz-selection {
-  color: rgb(14, 236, 151);
-  text-shadow: rgb(14, 236, 151) 1px 0 10px;
-  background-color: rgb(9, 11, 16);
+  color: var(--primary);
+  text-shadow: var(--primary) 1px 0 10px;
+  background-color: var(--background);
 }
 
 ::selection {
-  color: rgb(14, 236, 151);
-  text-shadow: rgb(14, 236, 151) 1px 0 10px;
-  background-color: rgb(9, 11, 16);
+  color: var(--primary);
+  text-shadow: var(--primary) 1px 0 10px;
+  background-color: var(--background);
 }
 
 .modal {
   overflow-x: hidden;
-  border: 1px solid rgb(20, 25, 37);
-  background-color: rgba(9, 11, 16, 0.8);
+  border: 1px solid var(--accentBlurred);
+  background-color: var(--background8);
   max-width: 90%;
   max-height: 90vh;
   -webkit-backdrop-filter: blur(2rem);
@@ -36,7 +49,7 @@ span.key {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 250px 250px rgb(20, 25, 37);
+  box-shadow: 0 0 250px 250px var(--accentBlurred);
   opacity: 0 !important;
   height: 0 !important;
   pointer-events: none !important;
@@ -50,8 +63,8 @@ span.key {
 }
 .modal > b, .modal ul > b, .modal ul li > b {
   font-size: 1.05em;
-  color: rgb(14, 236, 151);
-  text-shadow: rgb(14, 236, 151) 1px 0 10px;
+  color: var(--primary);
+  text-shadow: var(--primary) 1px 0 10px;
 }
 .modal button.clsBtn {
   position: absolute;
@@ -69,10 +82,10 @@ span.key {
 }
 
 input, textarea {
-  border: 1px solid rgb(20, 25, 37);
-  background: rgb(9, 11, 16);
+  border: 1px solid var(--accentBlurred);
+  background: var(--background);
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   padding: 12px 16px;
   font-size: 1.01rem;
   outline: none;
@@ -81,18 +94,18 @@ input, textarea {
   font-family: "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 input:hover, textarea:hover {
-  background-color: rgb(9, 11, 16);
-  border: 1px solid rgb(47, 57, 86);
+  background-color: var(--background);
+  border: 1px solid var(--accent);
 }
 input:focus, input:focus-visible, textarea:focus, textarea:focus-visible {
-  background-color: rgb(9, 11, 16);
-  border: 1px solid rgb(47, 57, 86);
-  box-shadow: 0 5px 18px 0 rgb(20, 25, 37);
+  background-color: var(--background);
+  border: 1px solid var(--accent);
+  box-shadow: 0 5px 18px 0 var(--accentBlurred);
 }
 
 html {
   scroll-behavior: smooth;
-  accent-color: rgb(14, 236, 151) !important;
+  accent-color: var(--primary) !important;
 }
 
 *::-webkit-scrollbar {
@@ -119,7 +132,7 @@ html {
 }
 
 :root {
-  accent-color: rgb(14, 236, 151) !important;
+  accent-color: var(--primary) !important;
 }
 
 .emoji {
@@ -128,15 +141,15 @@ html {
 
 .sectionTitle {
   opacity: 0.3;
-  font-family: "Roboto Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
-  color: rgb(14, 236, 151);
+  color: var(--primary);
   text-decoration: none;
 }
 a:hover:not(.btn, .droped a, .droped + a), a:hover:not(.innerNav .title) {
-  color: rgb(241, 19, 104);
+  color: var(--secondary);
   text-decoration: underline;
   text-decoration-style: wavy;
 }
@@ -144,10 +157,10 @@ a:hover:not(.btn, .droped a, .droped + a), a:hover:not(.innerNav .title) {
 button, .btn {
   font-family: unset;
   background-color: transparent !important;
-  box-shadow: inset 0 0px 4px 0.5px rgb(47, 57, 86) !important;
+  box-shadow: inset 0 0px 4px 0.5px var(--accent) !important;
   border: none;
   outline: none;
-  color: #fff !important;
+  color: var(--white) !important;
   padding: 4px 8px !important;
   border-radius: 5px;
   text-decoration: none !important;
@@ -155,10 +168,10 @@ button, .btn {
   pointer-events: unset;
 }
 button:hover, .btn:hover {
-  box-shadow: inset 0 0px 40px 20px rgb(20, 25, 37) !important;
+  box-shadow: inset 0 0px 40px 20px var(--accentBlurred) !important;
 }
 button.active, .btn.active {
-  background-color: rgb(47, 57, 86) !important;
+  background-color: var(--accent) !important;
 }
 button[disabled], button:disabled, .btn[disabled], .btn:disabled {
   opacity: 0.2;
@@ -166,17 +179,17 @@ button[disabled], button:disabled, .btn[disabled], .btn:disabled {
 }
 
 select {
-  background-color: rgb(9, 11, 16) !important;
+  background-color: var(--background) !important;
   font-family: unset;
-  color: #fff;
-  box-shadow: inset 0 0px 2px 0 rgb(47, 57, 86) !important;
+  color: var(--white);
+  box-shadow: inset 0 0px 2px 0 var(--accent) !important;
   border: none;
   outline: none;
   padding: 4px 8px;
   border-radius: 5px;
 }
 select:hover, select:focus-visible {
-  box-shadow: inset 0 0px 40px 20px rgb(20, 25, 37) !important;
+  box-shadow: inset 0 0px 40px 20px var(--accentBlurred) !important;
 }
 
 * {
@@ -189,8 +202,8 @@ body {
   scrollbar-gutter: stable both-edges;
   overflow-x: hidden;
   min-height: 100vh;
-  background: rgb(9, 11, 16);
-  color: #fff;
+  background: var(--background);
+  color: var(--white);
   margin: 0;
   padding: 0;
   font-family: "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
@@ -202,8 +215,9 @@ body nav {
   height: 3.5rem;
   padding-left: 50px;
   padding-right: 50px;
-  border-bottom: 0.01px solid rgb(47, 57, 86);
-  position: fixed;
+  border-bottom: 0.01px solid var(--accent);
+  position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 50;
 }
@@ -221,14 +235,14 @@ body nav .innerNav > input[type=checkbox] {
 body nav .innerNav > input[type=checkbox]:checked + div {
   min-height: 150px;
   pointer-events: all;
-  color: #fff;
+  color: var(--white);
   padding: 16px;
   opacity: 1;
 }
 body nav .innerNav a.title {
   text-decoration: none !important;
   font-size: 1.6rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 600;
   display: flex;
   flex-direction: row;
@@ -239,7 +253,7 @@ body nav .innerNav a.title {
 body nav .innerNav a.title > span .img-container {
   height: 2rem !important;
   width: 2rem !important;
-  background-color: rgb(20, 25, 37);
+  background-color: var(--accentBlurred);
   border-radius: 50%;
   overflow: hidden !important;
   position: relative;
@@ -251,7 +265,7 @@ body nav .innerNav a.title > span .img-container::before {
   left: 15px;
   width: 1rem;
   height: 1rem;
-  background: rgb(14, 236, 151);
+  background: var(--primary);
   content: "";
   z-index: 0;
   border-radius: 50%;
@@ -263,7 +277,7 @@ body nav .innerNav a.title > span .img-container::after {
   left: calc(50% - 15px);
   width: 1rem;
   height: 1rem;
-  background: rgb(241, 19, 104);
+  background: var(--secondary);
   content: "";
   z-index: 0;
   border-radius: 50%;
@@ -314,7 +328,7 @@ body nav .innerNav div.links .droped a {
   position: relative;
 }
 body nav .innerNav div.links .droped a:hover::before {
-  width: calc(100% + 5px) !important;
+  width: 100% !important;
   transition: 0.2s all;
 }
 body nav .innerNav div.links .droped a::before {
@@ -330,13 +344,17 @@ body nav .innerNav div.links .droped a::before {
 body nav .innerNav div.links .droped a.active {
   color: rgba(255, 255, 255, 0.8) !important;
 }
+body nav .innerNav div.links .droped sup {
+  color: var(--primary);
+  font-family: "Noto Sans Mono", "Courier New", Courier, monospace;
+}
 body nav .innerNav .dropdown {
-  background-color: rgb(9, 11, 16);
+  background-color: var(--background);
   max-width: 320px !important;
   position: absolute;
   right: 150px;
   top: 3rem;
-  border: 0.02px solid rgb(47, 57, 86);
+  border: 0.02px solid var(--accent);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -367,7 +385,7 @@ body nav .innerNav .dropdown span.sectionTitle + div button span.alternative {
 }
 body main > .row-container {
   margin-top: 0;
-  padding-top: 5rem;
+  padding-top: 20px;
 }
 body .row-container {
   margin-top: 5rem;
@@ -383,12 +401,34 @@ body .row-container {
 body .row-container .img-container {
   height: 20rem !important;
   width: 20rem !important;
-  background-color: rgb(20, 25, 37);
+  background-color: var(--accentBlurred);
   border-radius: 50%;
-  overflow: hidden;
   position: relative;
   z-index: 0;
-  box-shadow: 50px 50px 500px 3px rgb(47, 57, 86), -50px -50px 100px 2px rgb(20, 25, 37);
+  box-shadow: 50px 50px 500px 3px var(--accent), -50px -50px 100px 2px var(--accentBlurred);
+}
+body .row-container .img-container span.itsme {
+  position: absolute;
+  z-index: 120;
+  top: -5px;
+  right: -200px;
+  font-size: 2rem;
+  font-family: "Caveat", cursive;
+  width: 100%;
+}
+body .row-container .img-container span.itsme::before {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+  background-image: url(../images/turn-right-arrow-svgrepo-com.svg);
+  z-index: 120;
+  height: 119px;
+  width: 150px;
+  filter: invert(100%);
+  transform: rotateZ(146deg);
+  margin-right: -100px;
+  margin-bottom: -40px;
 }
 body .row-container .img-container::before {
   position: absolute;
@@ -396,7 +436,7 @@ body .row-container .img-container::before {
   left: 20px;
   width: 10rem;
   height: 10rem;
-  background: rgb(14, 236, 151);
+  background: var(--primary);
   content: "";
   z-index: -1;
   border-radius: 50%;
@@ -409,7 +449,7 @@ body .row-container .img-container::after {
   left: 20px;
   width: 10rem;
   height: 10rem;
-  background: rgb(241, 19, 104);
+  background: var(--secondary);
   content: "";
   z-index: -1;
   border-radius: 50%;
@@ -430,14 +470,15 @@ body .row-container .img-container img {
   width: 20rem;
   height: 20rem;
   z-index: 5;
+  border-radius: 50%;
   -webkit-backdrop-filter: blur(4rem);
           backdrop-filter: blur(4rem);
 }
 body .row-container div.info h1 > span {
-  color: rgb(14, 236, 151);
+  color: var(--primary);
 }
 body .row-container div.info h1 > span:first-child {
-  color: rgb(241, 19, 104) !important;
+  color: var(--secondary) !important;
 }
 body .row-container .content-container {
   width: calc(100% - 30rem);
@@ -489,7 +530,7 @@ body .about-section .routes::before {
   left: 50%;
   top: 40px;
   transform: translateX(-50%);
-  background-color: rgb(20, 25, 37);
+  background-color: var(--accentBlurred);
   z-index: -1;
 }
 body .about-section .routes .route {
@@ -500,11 +541,11 @@ body .about-section .routes .route {
   gap: 25px;
 }
 body .about-section .routes .route .img {
-  --shadow-color: $accentBlurred;
+  --shadow-color: var(--accentBlurred);
   width: 4rem;
   height: 4rem;
-  background-color: rgb(20, 25, 37);
-  border: 10px solid rgb(9, 11, 16);
+  background-color: var(--accentBlurred);
+  border: 10px solid var(--background);
   box-shadow: 0 0 500px 10px var(--shadow-color);
   border-radius: 50%;
   font-size: 1.5rem;
@@ -524,102 +565,102 @@ body .about-section .routes .route .text {
 body .about-section .routes .route .text span {
   font-size: 1rem;
 }
-body .projects-section {
+body .works-section {
   padding-top: 50px;
   margin-left: 5rem;
   margin-right: 5rem;
 }
-body .projects-section > .card {
+body .works-section > .card {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 1rem;
-  border: 1px dashed rgb(20, 25, 37);
+  border: 1px dashed var(--accentBlurred);
   background: transparent;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   padding: 8px 16px;
   text-align: center;
 }
-body .projects-section > .card:hover {
-  background-color: rgb(9, 11, 16);
-  border: 1px solid rgb(47, 57, 86);
-  box-shadow: 0 5px 18px 0 rgb(20, 25, 37);
+body .works-section > .card:hover {
+  background-color: var(--background);
+  border: 1px solid var(--accent);
+  box-shadow: 0 5px 18px 0 var(--accentBlurred);
 }
-body .projects-section h1 {
+body .works-section h1 {
   font-size: 3rem;
   margin: 0;
   padding: 0;
   z-index: 2;
 }
-body .projects-section .cards {
+body .works-section .cards {
   padding-top: 20px;
   max-width: calc(100% - 10rem);
   margin: 0 auto;
   display: grid;
   gap: 1rem;
 }
-body .projects-section .cards .card {
-  border: 1px solid rgb(20, 25, 37);
+body .works-section .cards .card {
+  border: 1px solid var(--accentBlurred);
   background: transparent;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   padding: 8px 16px;
   position: relative;
 }
-body .projects-section .cards .card:hover {
-  background-color: rgb(9, 11, 16);
-  border: 1px solid rgb(47, 57, 86);
-  box-shadow: 0 5px 18px 0 rgb(20, 25, 37);
+body .works-section .cards .card:hover {
+  background-color: var(--background);
+  border: 1px solid var(--accent);
+  box-shadow: 0 5px 18px 0 var(--accentBlurred);
 }
-body .projects-section .cards .card:hover h1 {
-  color: rgb(14, 236, 151) !important;
+body .works-section .cards .card:hover h1 {
+  color: var(--primary) !important;
 }
-body .projects-section .cards .card:hover a {
-  color: rgba(14, 236, 151, 0.5) !important;
+body .works-section .cards .card:hover a {
+  color: var(--primary5) !important;
 }
-body .projects-section .cards .card h1 {
+body .works-section .cards .card h1 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--white);
 }
-body .projects-section .cards .card p {
+body .works-section .cards .card p {
   padding-top: 5px;
   padding-bottom: 7px;
-  color: #fff;
+  color: var(--white);
   opacity: 0.7;
 }
-body .projects-section .cards .card div.seeon {
+body .works-section .cards .card div.seeon {
   position: absolute;
   top: 16px;
   right: 16px;
 }
-body .projects-section .cards .card .maded {
+body .works-section .cards .card .maded {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-body .projects-section .cards .card .maded .lang-js::before {
+body .works-section .cards .card .maded .lang-js::before {
   content: "● ";
   color: orange;
 }
-body .projects-section .cards .card .maded .lang-html::before {
+body .works-section .cards .card .maded .lang-html::before {
   content: "● ";
   color: orangered;
 }
-body .projects-section .cards .card .maded .lang-css::before {
+body .works-section .cards .card .maded .lang-css::before {
   content: "● ";
   color: aqua;
 }
-body .projects-section .cards .card .maded .lang-astro::before {
+body .works-section .cards .card .maded .lang-astro::before {
   content: "● ";
   color: hotpink;
 }
-body .projects-section .cards .card a {
+body .works-section .cards .card a {
   color: rgba(255, 255, 255, 0.6);
 }
-body .projects-section .cards .card a:hover {
+body .works-section .cards .card a:hover {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-body .projects-section .cards .card * {
+body .works-section .cards .card * {
   margin: 0;
   padding: 0;
 }
@@ -642,17 +683,17 @@ body .blog-section .cards {
   gap: 1rem;
 }
 body .blog-section .cards .card {
-  border: 1px dashed rgb(20, 25, 37);
+  border: 1px dashed var(--accentBlurred);
   background: transparent;
   border-radius: 5px;
-  color: #fff;
+  color: var(--white);
   padding: 8px 16px;
   position: relative;
 }
 body .blog-section .cards .card.activeCard {
   max-height: unset !important;
   transform: translate(-50%, -50%);
-  background-color: rgb(9, 11, 16);
+  background-color: var(--background);
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
@@ -667,6 +708,7 @@ body .blog-section .cards .card.activeCard p {
   font-size: 1.05rem !important;
   margin-left: 5rem !important;
   margin-right: 5rem !important;
+  opacity: 1 !important;
 }
 body .blog-section .cards .card.activeCard .maded .btn {
   display: none !important;
@@ -682,16 +724,16 @@ body .blog-section .cards .card.activeCard > .btn {
   display: unset !important;
 }
 body .blog-section .cards .card:hover {
-  background-color: rgb(9, 11, 16);
-  border: 1px solid rgb(47, 57, 86);
-  box-shadow: 0 5px 18px 0 rgb(20, 25, 37);
+  background-color: var(--background);
+  border: 1px solid var(--accent);
+  box-shadow: 0 5px 18px 0 var(--accentBlurred);
 }
 body .blog-section .cards .card:hover h1 {
-  color: rgb(14, 236, 151) !important;
+  color: var(--primary) !important;
 }
 body .blog-section .cards .card h1 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--white);
 }
 body .blog-section .cards .card > .btn {
   display: none;
@@ -699,7 +741,7 @@ body .blog-section .cards .card > .btn {
 body .blog-section .cards .card p {
   padding-top: 5px;
   padding-bottom: 7px;
-  color: #fff;
+  color: var(--white);
   opacity: 0.7;
   height: 120px;
   overflow: hidden !important;
@@ -731,10 +773,11 @@ body .blog-section .cards .card .maded .lang-astro::before {
   color: hotpink;
 }
 body .blog-section .cards .card a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white);
+  opacity: 0.6;
 }
 body .blog-section .cards .card a:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+  opacity: 0.8 !important;
 }
 body .blog-section .cards .card * {
   margin: 0;
@@ -753,25 +796,25 @@ body .mailcon {
   transform: rotateZ(90deg);
 }
 body .mailcon a {
-  color: #fff !important;
-  font-family: "Roboto Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--white) !important;
+  font-family: "Noto Sans Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   transition: 0.2s all;
 }
 body .mailcon a:hover {
-  background: linear-gradient(270deg, rgb(14, 236, 151) -20%, rgb(241, 19, 104) 120%);
+  background: linear-gradient(270deg, var(--primary) -20%, var(--secondary) 120%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: rgb(9, 11, 16);
+  color: var(--background);
   transition: 0.2s all;
 }
 body .mailcon:has(a:hover) .line {
-  background: rgb(14, 236, 151) !important;
+  background: var(--primary) !important;
 }
 body .mailcon .line {
   height: 1px;
   width: 90px;
-  background: #fff;
+  background: var(--white);
 }
 body .contact-section {
   padding-top: 50px;
@@ -810,7 +853,7 @@ body .contact-section .labels {
   align-items: flex-end;
 }
 body .contact-section .labels label {
-  background-color: rgb(9, 11, 16);
+  background-color: var(--background);
   border-radius: 5px;
   width: -moz-max-content !important;
   width: max-content !important;
@@ -836,7 +879,7 @@ body .contact-section .form form button[type=submit] {
   padding: 8px 16px !important;
   font-size: 1.01rem;
   float: right;
-  background-color: rgb(9, 11, 16) !important;
+  background-color: var(--background) !important;
   margin-right: 0;
 }
 body .contact-section h2 img {
@@ -856,9 +899,9 @@ footer {
   position: relative;
   margin-top: 0;
   padding: 9px;
-  border-top: 1px solid rgb(20, 25, 37);
+  border-top: 1px solid var(--accentBlurred);
   text-align: center;
-  background-color: rgba(9, 11, 16, 0.5);
+  background-color: var(--background5);
 }
 footer::after {
   content: "";
@@ -867,7 +910,7 @@ footer::after {
   right: 0;
   height: 500px;
   width: 500px;
-  background: linear-gradient(to left, rgb(14, 236, 151), rgb(241, 19, 104));
+  background: linear-gradient(to left, var(--primary), var(--secondary));
   border-radius: 50% 0;
   z-index: -1;
   filter: blur(200px);
@@ -906,8 +949,8 @@ footer p {
     opacity: 1 !important;
     padding-top: 3.2rem !important;
     height: auto !important;
-    background: rgb(9, 11, 16) !important;
-    border-bottom: 0.01px solid rgb(47, 57, 86);
+    background: var(--background) !important;
+    border-bottom: 0.01px solid var(--accent);
     color: unset !important;
     pointer-events: all !important;
   }
@@ -920,7 +963,8 @@ footer p {
     cursor: pointer;
   }
   div.links #menuOpener + label span:nth-child(1) {
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--white);
+    opacity: 0.4;
     width: 1.2rem;
     height: 2.5px;
     display: block;
@@ -932,7 +976,8 @@ footer p {
     border-radius: 2px;
   }
   div.links #menuOpener + label span:nth-child(2) {
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--white);
+    opacity: 0.4;
     width: 1.2rem;
     height: 2.5px;
     display: block;
@@ -944,7 +989,8 @@ footer p {
     border-radius: 2px;
   }
   div.links #menuOpener:checked + label span:nth-child(1) {
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--white);
+    opacity: 0.4;
     width: 1.2rem;
     height: 2px;
     display: block;
@@ -956,7 +1002,8 @@ footer p {
     border-radius: 2px;
   }
   div.links #menuOpener:checked + label span:nth-child(2) {
-    background: rgba(255, 255, 255, 0.4);
+    background: var(--white);
+    opacity: 0.4;
     width: 1.2rem;
     height: 2px;
     display: block;
@@ -980,7 +1027,7 @@ footer p {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
-  .about-section, .projects-section, .blog-section, .contact-section {
+  .about-section, .works-section, .blog-section, .contact-section {
     margin-left: 1rem !important;
     margin-right: 0 !important;
   }
@@ -992,7 +1039,7 @@ footer p {
     margin-left: -1rem !important;
     padding-left: 20px !important;
   }
-  .projects-section .cards, .blog-section .cards {
+  .works-section .cards, .blog-section .cards {
     max-width: 100% !important;
   }
   .mailcon {
@@ -1022,7 +1069,7 @@ footer p {
   }
 }
 .container {
-  background-color: rgb(9, 11, 16);
+  background-color: var(--background);
   position: fixed;
   z-index: 70;
   width: 100%;
@@ -1065,7 +1112,7 @@ footer p {
   position: absolute;
   width: 4px;
   height: 0%;
-  background: rgb(14, 236, 151);
+  background: var(--primary);
   z-index: 999999;
 }
 @keyframes rotateIt {
