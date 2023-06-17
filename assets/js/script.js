@@ -122,6 +122,14 @@ if(currentTheme == "dark") {
 
   var themeColorCSS = document.querySelector("head link#themeColorCSS");
   themeColorCSS.setAttribute('href','assets/css/system.css');
+}else {
+  darkBtn.classList.remove('active');
+  lightBtn.classList.remove('active');
+  systemBtn.classList.add('active');
+
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/system.css');
+  localStorage.setItem("theme", "system");
 }
 
 lightBtn.addEventListener("click",function () {
