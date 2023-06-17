@@ -7,6 +7,38 @@ code {
   font-style: oblique;
 }
 
+.caution {
+  display: block;
+  width: 100%;
+  background-color: var(--accentBlurred) !important;
+  box-shadow: inset 0 0 0 0.5px var(--accent), inset 0 0 10px 4px var(--background), inset 0 -10px 20px 0 var(--primary5) !important;
+  border: none;
+  outline: none;
+  color: var(--white) !important;
+  padding: 16px !important;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+.caution p {
+  margin: 0;
+  padding: 0;
+  z-index: 1 !important;
+}
+.caution::before {
+  content: "\f071";
+  font: var(--fa-font-solid);
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  transform: rotate(22deg);
+  color: var(--accent);
+  opacity: 0.4;
+  font-size: 4rem;
+  font-weight: 900;
+  z-index: 0;
+}
+
 .emoji {
   font-family: "Noto Color Emoji", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -349,7 +381,6 @@ body nav .innerNav div.links .droped a:hover span {
 }
 body nav .innerNav .dropdown {
   background-color: var(--background);
-  max-width: 320px !important;
   position: absolute;
   right: 150px;
   top: 3rem;
@@ -360,7 +391,7 @@ body nav .innerNav .dropdown {
   gap: 10px;
   height: auto;
   pointer-events: none;
-  height: 0;
+  width: 320px;
   color: transparent;
   padding: 0;
   opacity: 0;
