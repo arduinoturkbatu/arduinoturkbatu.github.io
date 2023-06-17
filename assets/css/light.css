@@ -8,4 +8,19 @@
     --primary5: rgba(14,236,151,0.5);
     --secondary: rgb(241, 19, 104);
     --white: #000;
+    --white6: rgba(0,0,0,0.6);
+    --white4: rgba(0,0,0,0.4);
+    --white8: rgba(0,0,0,0.8);
+}
+
+.img-container span.itsme::before {
+    filter: invert(0%) !important;
+}
+
+.mailcon a {
+    filter: invert(100%);
+}
+
+.mailcon a:hover {
+    filter: invert(0%);
 }

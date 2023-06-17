@@ -92,4 +92,67 @@ function getCurrentPOST() {
 
 document.addEventListener("readystatechange",()=>{
   getCurrentPOST();
-})
+});
+
+
+const lightBtn = document.querySelector('.lightBtn');
+const darkBtn = document.querySelector('.darkBtn');
+const systemBtn = document.querySelector('.systemBtn');
+
+const currentTheme = localStorage.getItem("theme");
+
+if(currentTheme == "dark") {
+  darkBtn.classList.add('active');
+  lightBtn.classList.remove('active');
+  systemBtn.classList.remove('active');
+
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/dark.css');
+}else if(currentTheme == "light") {
+  darkBtn.classList.remove('active');
+  lightBtn.classList.add('active');
+  systemBtn.classList.remove('active');
+
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/light.css');
+}else if(currentTheme == "system") {
+  darkBtn.classList.remove('active');
+  lightBtn.classList.remove('active');
+  systemBtn.classList.add('active');
+
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/system.css');
+}
+
+lightBtn.addEventListener("click",function () {
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/light.css');
+
+  darkBtn.classList.remove('active');
+  lightBtn.classList.add('active');
+  systemBtn.classList.remove('active');
+
+  localStorage.setItem("theme", "light");
+});
+
+darkBtn.addEventListener("click",function () {
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/dark.css');
+
+  darkBtn.classList.add('active');
+  lightBtn.classList.remove('active');
+  systemBtn.classList.remove('active');
+
+  localStorage.setItem("theme", "dark");
+});
+
+systemBtn.addEventListener("click",function () {
+  var themeColorCSS = document.querySelector("head link#themeColorCSS");
+  themeColorCSS.setAttribute('href','assets/css/system.css');
+
+  darkBtn.classList.remove('active');
+  lightBtn.classList.remove('active');
+  systemBtn.classList.add('active');
+
+  localStorage.setItem("theme", "system");
+});

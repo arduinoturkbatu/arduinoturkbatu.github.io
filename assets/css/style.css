@@ -2,16 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&family=Noto+Color+Emoji&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
-:root {
-  --background: rgb(9, 11, 16);
-  --background5: rgba(9,11,16,0.5);
-  --background8: rgba(9,11,16,0.8);
-  --accent: rgb(47, 57, 86);
-  --accentBlurred: rgb(20, 25, 37);
-  --primary: rgb(14, 236, 151);
-  --primary5: rgba(14,236,151,0.5);
-  --secondary: rgb(241, 19, 104);
-  --white: #fff;
+code {
+  font-family: "Noto Sans Mono", "Courier New", Courier, monospace;
+  font-style: oblique;
+}
+
+.emoji {
+  font-family: "Noto Color Emoji", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 span.key {
@@ -19,27 +16,28 @@ span.key {
   border-radius: 5px;
   padding: 2px 10px !important;
   margin-top: 4px !important;
-  font-family: "Noto Sans Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-family: "Mulish", "Noto Sans Mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 ::-moz-selection {
   color: var(--primary);
   text-shadow: var(--primary) 1px 0 10px;
-  background-color: var(--background);
+  background-color: var(--accentBlurred);
 }
 
 ::selection {
   color: var(--primary);
   text-shadow: var(--primary) 1px 0 10px;
-  background-color: var(--background);
+  background-color: var(--accentBlurred);
 }
 
 .modal {
   overflow-x: hidden;
   border: 1px solid var(--accentBlurred);
   background-color: var(--background8);
-  max-width: 90%;
+  max-width: 100%;
   max-height: 90vh;
+  overflow-y: auto;
   -webkit-backdrop-filter: blur(2rem);
           backdrop-filter: blur(2rem);
   border-radius: 5px;
@@ -67,7 +65,7 @@ span.key {
   text-shadow: var(--primary) 1px 0 10px;
 }
 .modal button.clsBtn {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   border-radius: 50%;
@@ -133,10 +131,6 @@ html {
 
 :root {
   accent-color: var(--primary) !important;
-}
-
-.emoji {
-  font-family: "Noto Color Emoji" !important;
 }
 
 .sectionTitle {
@@ -258,31 +252,32 @@ body nav .innerNav a.title > span .img-container {
   overflow: hidden !important;
   position: relative;
   z-index: 0;
-}
-body nav .innerNav a.title > span .img-container::before {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 1rem;
-  height: 1rem;
-  background: var(--primary);
-  content: "";
-  z-index: 0;
-  border-radius: 50%;
-  filter: blur(5px) !important;
-}
-body nav .innerNav a.title > span .img-container::after {
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 15px);
-  width: 1rem;
-  height: 1rem;
-  background: var(--secondary);
-  content: "";
-  z-index: 0;
-  border-radius: 50%;
-  animation-delay: 1.25s;
-  filter: blur(5px) !important;
+  /*&::before {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 1rem;
+      height: 1rem;
+      background: var(--primary);
+      content: '';
+      z-index: 0;
+      border-radius: 50%;
+      filter: blur(5px) !important;
+  }
+
+  &::after {
+      position: absolute;
+      top: calc(50% - 15px);
+      left: calc(50% - 15px);
+      width: 1rem;
+      height: 1rem;
+      background: var(--secondary);
+      content: '';
+      z-index: 0;
+      border-radius: 50%;
+      animation-delay: 1.25s;
+      filter: blur(5px) !important;
+  }*/
 }
 body nav .innerNav a.title > span .img-container img {
   position: fixed;
@@ -301,7 +296,7 @@ body nav .innerNav .links {
 body nav .innerNav .links a {
   text-transform: lowercase;
   text-decoration: none !important;
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: var(--white6) !important;
   font-size: 1.3em;
 }
 body nav .innerNav .links a a:hover {
@@ -318,13 +313,13 @@ body nav .innerNav div.links .droped {
   gap: 10px;
 }
 body nav .innerNav div.links .droped:has(a:hover) a:not(:hover) {
-  color: rgba(255, 255, 255, 0.4) !important;
+  color: var(--white4) !important;
 }
 body nav .innerNav div.links .droped a {
   text-transform: lowercase;
   text-decoration: none !important;
-  color: rgba(255, 255, 255, 0.6) !important;
-  font-size: 1.3em;
+  color: var(--white6) !important;
+  font-size: 1.3rem;
   position: relative;
 }
 body nav .innerNav div.links .droped a:hover::before {
@@ -338,15 +333,19 @@ body nav .innerNav div.links .droped a::before {
   left: 0;
   height: 2px;
   width: 0;
-  background: rgba(255, 255, 255, 0.6) !important;
+  background: var(--white6) !important;
   transition: 0.2s all;
 }
 body nav .innerNav div.links .droped a.active {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--white8) !important;
 }
-body nav .innerNav div.links .droped sup {
+body nav .innerNav div.links .droped a span {
   color: var(--primary);
+  font-size: 0.845rem;
   font-family: "Noto Sans Mono", "Courier New", Courier, monospace;
+}
+body nav .innerNav div.links .droped a:hover span {
+  font-size: 1.3rem;
 }
 body nav .innerNav .dropdown {
   background-color: var(--background);
@@ -398,10 +397,10 @@ body .row-container {
   padding-bottom: 3rem;
   gap: 2rem;
 }
-body .row-container .img-container {
+body .row-container .img-container { /*DON'T CHANGE THE COLOR VALUES EVEN IT'S IN THE LIGHT MODE*/
   height: 20rem !important;
   width: 20rem !important;
-  background-color: var(--accentBlurred);
+  background-color: rgb(20, 25, 37);
   border-radius: 50%;
   position: relative;
   z-index: 0;
@@ -512,8 +511,8 @@ body .about-section .aboutst {
   padding-top: 8px;
 }
 body .about-section .routes {
-  margin-left: 40px;
-  margin-top: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -521,6 +520,8 @@ body .about-section .routes {
   gap: 50px;
   position: relative;
   padding-bottom: 40px !important;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 body .about-section .routes::before {
   content: "";
@@ -528,8 +529,8 @@ body .about-section .routes::before {
   height: 2px;
   width: calc(60% - 10rem);
   left: 50%;
-  top: 40px;
-  transform: translateX(-50%);
+  top: 35%;
+  transform: translate(-50%, -50%);
   background-color: var(--accentBlurred);
   z-index: -1;
 }
@@ -655,10 +656,10 @@ body .works-section .cards .card .maded .lang-astro::before {
   color: hotpink;
 }
 body .works-section .cards .card a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white6);
 }
 body .works-section .cards .card a:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--white8) !important;
 }
 body .works-section .cards .card * {
   margin: 0;
@@ -796,7 +797,7 @@ body .mailcon {
   transform: rotateZ(90deg);
 }
 body .mailcon a {
-  color: var(--white) !important;
+  color: #fff !important;
   font-family: "Noto Sans Mono", "Mulish", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   transition: 0.2s all;
 }
@@ -805,7 +806,7 @@ body .mailcon a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--background);
+  color: rgb(9, 11, 16); /*DON'T CHANGE THIS*/
   transition: 0.2s all;
 }
 body .mailcon:has(a:hover) .line {
@@ -941,6 +942,15 @@ footer p {
     opacity: 0 !important;
     overflow: auto !important;
     padding-bottom: 20px !important;
+  }
+  .droped a {
+    font-size: 2rem !important;
+  }
+  .droped a span {
+    font-size: 1.3rem !important;
+  }
+  .droped a:hover span {
+    font-size: 2rem !important;
   }
   .droped a:hover {
     padding-left: 1.5rem !important;

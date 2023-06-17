@@ -1,0 +1,45 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: rgb(9, 11, 16);
+        --background5: rgba(9,11,16,0.5);
+        --background8: rgba(9,11,16,0.8);
+        --accent: rgb(47, 57, 86);
+        --accentBlurred: rgb(20, 25, 37);
+        --primary: rgb(14, 236, 151);
+        --primary5: rgba(14,236,151,0.5);
+        --secondary: rgb(241, 19, 104);
+        --white: #fff;
+        --white6: rgba(255,255,255,0.6);
+        --white4: rgba(255,255,255,0.4);
+        --white8: rgba(255,255,255,0.8);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: rgb(246, 244, 239);
+        --background5: rgba(246,244,239,0.5);
+        --background8: rgba(246,244,239,0.8);
+        --accent: rgb(208, 198, 169);
+        --accentBlurred: rgb(235, 230, 218);
+        --primary: rgb(14, 236, 151);
+        --primary5: rgba(14,236,151,0.5);
+        --secondary: rgb(241, 19, 104);
+        --white: #000;
+        --white6: rgba(0,0,0,0.6);
+        --white4: rgba(0,0,0,0.4);
+        --white8: rgba(0,0,0,0.8);
+    }
+    
+    .img-container span.itsme::before {
+        filter: invert(0%) !important;
+    }
+
+    .mailcon a {
+        filter: invert(100%);
+    }
+    
+    .mailcon a:hover {
+        filter: invert(0%);
+    }
+}

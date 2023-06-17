@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/avatar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <meta name="description" content="Discover the world of tech coding at Batu Akyar's website! Learn, code, and enhance your skills with our expert tutorials and insights.">
     <title>Batu Akyar</title>
+    <meta name="theme-color" content="rgb(14, 236, 151)">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/system.css" id="themeColorCSS">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css' integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==' crossorigin='anonymous'/>
 </head>
 <body>
@@ -18,10 +19,23 @@
         <h1 class="sectionTitle">&blacktriangleright;changelog</h1>
         <ul>
             <li>
+                <b>&beta;.3</b><br/>
+                <ol>
+                    <li>Some visual updates created.</li>
+                    <li>Theme selecting (light, dark, system) are now stable and ready to use!</li>
+                    <li>A banner created, so users can know the website is in β (beta) version.</li>
+                    <li>Added <code>overflow-x</code> to route section, so the webpage can work fine in mobile.</li>
+                    <li>Fixed: Navbar's position changed from <code>fixed</code> to <code>sticky & -webkit-sticky</code>, so the user can use navbar when the webpage translated via Google Translate.</li>
+                    <li>Monospace font changed from "Roboto Mono" to "Noto Sans Mono".</li>
+                    <li>Fixed: Floating mail container's text color is changed to theme's text color (<code>var(--white)</code>).</li>
+                    <li>Website's favicon changed to actual favicon, not the avatar (of me :).</li>
+                </ol>
+            </li>
+            <li>
                 <b>&beta;.2.2</b><br/>
                 <ol>
                     <li>Some visual updates created.</li>
-                    <li>Theme switching mode started.</li>
+                    <li>Theme switching mode development started.</li>
                     <li>Homepage section deleted.</li>
                     <li>Projects section turned into Works section.</li>
                 </ol>
@@ -105,11 +119,12 @@
         <a href="mailto:batuakyar07@gmail.com" about="_blank"><span class="emoji">📨</span> <span>batuakyar07@gmail.com</span></a>
         <div class="line"></div>
     </div>
+    <div style="background-color: var(--accentBlurred);text-align: center;padding: 16px;"><b>WARNING!</b> This website is still in development. It can perform different things the user doesn't wanted to.</div>
     <nav>
         <div class="innerNav">
             <a href="#" class="title" translate="no"><span><div class="img-container">
-                <img src="assets/images/avatar.png" alt="Avatar">
-            </div></span> Batu Akyar <sup onclick="document.getElementById('changelogModal').classList.add('show')">v/<span class="sectionTitle">&beta;.2</span></sup></a>
+                <img src="assets/images/favicon.png" alt="Avatar">
+            </div></span> Batu Akyar <sup onclick="document.getElementById('changelogModal').classList.add('show')">v/<span class="sectionTitle">&beta;.3</span></sup></a>
             <div class="links">
                 <input type="checkbox" name="menuOpener" id="menuOpener">
                 <label for="menuOpener">
@@ -118,20 +133,20 @@
                 </label>
                 <div class="droped">
                     <a href="#homepage" class="current" style="display: hidden !important;opacity:0 !important;pointer-events: none !important;height: 0 !important;width: 0 !important;padding:0 !important;margin: 0 !important;">hidden</a>
-                    <a href="#about"><sup>01.</sup>about</a>
-                    <a href="#works"><sup>02.</sup>works</a>
-                    <a href="#blog"><sup>03.</sup>blog</a>
-                    <a href="#contact"><sup>04.</sup>contact me</a>
+                    <a href="#about"><span>01.</span>about</a>
+                    <a href="#works"><span>02.</span>works</a>
+                    <a href="#blog"><span>03.</span>blog</a>
+                    <a href="#contact"><span>04.</span>contact me</a>
                 </div>
                 <a href=""><label for="options" style="cursor: pointer;">&blacktriangledown;</label></a>
             </div>
             <input type="checkbox" name="options" id="options">
             <div class="dropdown">
-                <span class="sectionTitle">&blacktriangleright;THEME [BETA]</span>
+                <span class="sectionTitle">&blacktriangleright;THEME</span>
                 <div>
-                    <button disabled><span class="emoji">☀️</span> Light</button>
-                    <button class="active"><span class="emoji">🌙</span> Dark</button>
-                    <button disabled><span class="emoji">💻</span> System</button>
+                    <button class="lightBtn"><span class="emoji">☀️</span> Light</button>
+                    <button class="darkBtn"><span class="emoji">🌙</span> Dark</button>
+                    <button class="systemBtn"><span class="emoji">💻</span> System</button>
                 </div>
                 <span class="sectionTitle">&blacktriangleright;LANGUAGE [BETA]</span>
                 <div>
@@ -385,7 +400,7 @@
 
     <footer>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Batu Akyar</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/arduinoturkbatu/">Arduino Türk Batu</a> is licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
-        Version &beta;.2 <span class="sectionTitle">|</span> <a href="#changelogModal" onclick="document.getElementById('changelogModal').classList.add('show')">See Changelog</a>
+        Version &beta;.3 <span class="sectionTitle">|</span> <a href="#changelogModal" onclick="document.getElementById('changelogModal').classList.add('show')">See Changelog</a>
     </footer>
     <script src="assets/js/script.js" type="text/javascript"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>
