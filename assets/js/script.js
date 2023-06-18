@@ -164,3 +164,24 @@ systemBtn.addEventListener("click",function () {
 
   localStorage.setItem("theme", "system");
 });
+
+//? Cursor Position
+function getCursor(event) {
+  let x = event.clientX;
+  let y = event.clientY;
+
+  const moyCursor = document.getElementById('cursor');
+  moyCursor.style.top = (y - 50%document.body.clientHeight) + "px";
+  moyCursor.style.left = (x - 50%document.body.clientWidth) + "px";
+}
+
+function debugMode() {
+  var x = document.querySelectorAll("*");
+  for (var i = 0; i < x.length; i++) {
+
+    x[i].style.border = "1px solid red";
+    x[i].style.background = "yellow";
+    x[i].style.color = "black";
+    
+}
+}

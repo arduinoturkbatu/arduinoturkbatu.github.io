@@ -12,12 +12,21 @@
     <link rel="stylesheet" href="assets/css/system.css" id="themeColorCSS">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css' integrity='sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==' crossorigin='anonymous'/>
 </head>
-<body>
+<body onmousemove="getCursor(event)">
+
+    <div id="cursor"></div>
 
     <div class="modal" id="changelogModal">
         <button class="clsBtn" onclick="document.getElementById('changelogModal').classList.remove('show')">&times;</button>
         <h1 class="sectionTitle">&blacktriangleright;changelog</h1>
         <ul>
+            <li>
+                <b>&beta;.3.4</b><br/>
+                <ol>
+                    <li>Debug mode added. You can access it with DEBUG button in the footer.</li>
+                    <li>Floating background cursor added.</li>
+                </ol>
+            </li>
             <li>
                 <b>&beta;.3.3</b><br/>
                 <ol>
@@ -439,6 +448,7 @@
                     </svg>
             </a>
         </div>
+        <button class="debug" onclick="debugMode()">DEBUG</button>
     </footer>
     <script src="assets/js/script.js" type="text/javascript"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript"></script>

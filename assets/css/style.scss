@@ -7,6 +7,35 @@ code {
     font-style: oblique;
 }
 
+#cursor {
+    background: linear-gradient(to right,var(--primary) 0% 50%,var(--secondary) 50% 100%);
+    position: fixed;
+    z-index: -50;
+    filter: blur(10rem);
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    animation: rotateCrs 12s ease;
+}
+
+@keyframes rotateCrs {
+    0% {
+        width: 400px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        width: 300px;
+    }
+
+    100% {
+        width: 400px;
+        transform: rotate(360deg);
+    }
+}
+
 .caution {
     display: block;
     width: 100%;
@@ -1077,6 +1106,18 @@ footer {
         margin: 0;
         padding: 0;
         padding-bottom: 5px !important;
+    }
+
+    button.debug {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1.01rem;
+        border-radius: 0;
+        box-shadow: none !important;
+        background: var(--secondary) !important;
+        color: var(--primary) !important;
+        font-family: 'Noto Sans Mono', 'Courier New', Courier, monospace;
     }
 }
 
