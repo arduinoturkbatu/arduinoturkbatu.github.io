@@ -10,28 +10,28 @@ code {
 #cursor {
     background: linear-gradient(to right,var(--primary) 0% 50%,var(--secondary) 50% 100%);
     position: fixed;
+    filter: blur(5rem);
     z-index: -50;
-    filter: blur(10rem);
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     border-radius: 50%;
     top: 0;
     left: 0;
-    animation: rotateCrs 12s ease;
+    animation: rotateCrs 12s ease infinite;
 }
 
 @keyframes rotateCrs {
     0% {
-        width: 400px;
+        width: 300px;
         transform: rotate(0deg);
     }
 
     50% {
-        width: 300px;
+        width: 200px;
     }
 
     100% {
-        width: 400px;
+        width: 300px;
         transform: rotate(360deg);
     }
 }
@@ -85,9 +85,8 @@ span.key {
 }
 
 ::selection {
-    color: var(--primary);
-    text-shadow: var(--primary) 1px 0 10px;
-    background-color: var(--accentBlurred);
+    text-shadow: 0 0 5px rgb(14, 236, 151);
+    background-color: #000;
 }
 
 .modal {
@@ -619,65 +618,69 @@ body {
             padding-top: 8px;
         }
 
-        .routes {
-            padding-left: 40px;
-            padding-top: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
+        .row-container {
+            width: calc(100% - 10rem);
+            margin: 0;
+            margin-left: 40px;
+            padding: 0;
+            gap: 20px;
             position: relative;
-            padding-bottom: 40px !important;
-            overflow-x: hidden;
-            overflow-y:visible;
 
             &::before {
                 content: '';
                 position: absolute;
-                height: 2px;
-                width: calc(60% - 10rem);
-                left: 50%;
-                top: 35%;
-                transform: translate(-50%,-50%);
-                background-color: var(--accentBlurred);
-                z-index: -1;
+                bottom: -50px;
+                left: -40px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: var(--primary);
+                filter: blur(100px);
             }
 
-            .route {
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                align-items: center;
-                gap: 25px;
+            & > div {
+                width: 50%;
 
-                .img {
-                    --shadow-color: var(--accentBlurred);
-                    width: 4rem;
-                    height: 4rem;
-                    background-color: var(--accentBlurred);
-                    border: 10px solid var(--background);
-                    box-shadow: 0 0 500px 10px var(--shadow-color);
-                    border-radius: 50%;
-                    font-size: 1.5rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                .cards {
+                    display: grid;
+                    margin: 0 auto;
+                    gap: 10px;
+                    width: 100%;
 
-                    img {
-                        width: 3rem;
+                    .s-card {
+                        backdrop-filter: blur(20px);
+                        border-radius: 10px;
+                        background-color: var(--background5);
+                        border: 1px solid var(--accentBlurred);
+                        padding: 16px 16px;
+
+                        i {
+                            font-size: 1.45rem;
+                            color: var(--primary);
+                        }
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            font-weight: bold;
+                            margin-top: 7px;
+                            display: inline;
+                            margin-block-start: 0;
+                            margin-block-end: 0;
+
+                            span {
+                                display: block;
+                                font-weight: normal;
+                            }
+                        }
                     }
                 }
 
-                .text {
+                h3 {
                     font-size: 1.5rem;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-
-                    span {
-                        font-size: 1rem;
-                    }
+                    margin: 0;
+                    margin-bottom: 10px;
+                    padding: 0;
                 }
             }
         }
@@ -1237,6 +1240,14 @@ footer {
 
     .row-container {
         flex-direction: column !important;
+
+        &>div {
+            width: 100%;
+
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
 
         .content-container {
             width: 100% !important;

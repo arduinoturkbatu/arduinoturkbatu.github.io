@@ -10,26 +10,26 @@ code {
 #cursor {
   background: linear-gradient(to right, var(--primary) 0% 50%, var(--secondary) 50% 100%);
   position: fixed;
+  filter: blur(5rem);
   z-index: -50;
-  filter: blur(10rem);
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   border-radius: 50%;
   top: 0;
   left: 0;
-  animation: rotateCrs 12s ease;
+  animation: rotateCrs 12s ease infinite;
 }
 
 @keyframes rotateCrs {
   0% {
-    width: 400px;
+    width: 300px;
     transform: rotate(0deg);
   }
   50% {
-    width: 300px;
+    width: 200px;
   }
   100% {
-    width: 400px;
+    width: 300px;
     transform: rotate(360deg);
   }
 }
@@ -78,15 +78,13 @@ span.key {
 }
 
 ::-moz-selection {
-  color: var(--primary);
-  text-shadow: var(--primary) 1px 0 10px;
-  background-color: var(--accentBlurred);
+  text-shadow: 0 0 5px rgb(14, 236, 151);
+  background-color: #000;
 }
 
 ::selection {
-  color: var(--primary);
-  text-shadow: var(--primary) 1px 0 10px;
-  background-color: var(--accentBlurred);
+  text-shadow: 0 0 5px rgb(14, 236, 151);
+  background-color: #000;
 }
 
 .modal {
@@ -567,61 +565,66 @@ body .about-section .aboutst {
   font-size: 1.2rem;
   padding-top: 8px;
 }
-body .about-section .routes {
-  padding-left: 40px;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+body .about-section .row-container {
+  width: calc(100% - 10rem);
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  gap: 20px;
   position: relative;
-  padding-bottom: 40px !important;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
-body .about-section .routes::before {
+body .about-section .row-container::before {
   content: "";
   position: absolute;
-  height: 2px;
-  width: calc(60% - 10rem);
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, -50%);
-  background-color: var(--accentBlurred);
-  z-index: -1;
-}
-body .about-section .routes .route {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 25px;
-}
-body .about-section .routes .route .img {
-  --shadow-color: var(--accentBlurred);
-  width: 4rem;
-  height: 4rem;
-  background-color: var(--accentBlurred);
-  border: 10px solid var(--background);
-  box-shadow: 0 0 500px 10px var(--shadow-color);
+  bottom: -50px;
+  left: -40px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  background-color: var(--primary);
+  filter: blur(100px);
+}
+body .about-section .row-container > div {
+  width: 50%;
+}
+body .about-section .row-container > div .cards {
+  display: grid;
+  margin: 0 auto;
+  gap: 10px;
+  width: 100%;
+}
+body .about-section .row-container > div .cards .s-card {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 10px;
+  background-color: var(--background5);
+  border: 1px solid var(--accentBlurred);
+  padding: 16px 16px;
+}
+body .about-section .row-container > div .cards .s-card i {
+  font-size: 1.45rem;
+  color: var(--primary);
+}
+body .about-section .row-container > div .cards .s-card p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-top: 7px;
+  display: inline;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+body .about-section .row-container > div .cards .s-card p span {
+  display: block;
+  font-weight: normal;
+}
+body .about-section .row-container > div h3 {
   font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .about-section .routes .route .img img {
-  width: 3rem;
-}
-body .about-section .routes .route .text {
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-body .about-section .routes .route .text span {
-  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
 }
 body .works-section {
   padding-top: 50px;
@@ -1094,6 +1097,12 @@ footer button.debug {
   }
   .row-container {
     flex-direction: column !important;
+  }
+  .row-container > div {
+    width: 100%;
+  }
+  .row-container > div .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
   .row-container .content-container {
     width: 100% !important;

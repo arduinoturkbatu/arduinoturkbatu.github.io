@@ -182,6 +182,9 @@ function debugMode() {
     x[i].style.border = "1px solid red";
     x[i].style.background = "yellow";
     x[i].style.color = "black";
+    x[i].style.filter = "none";
+    x[i].style.backdropFilter = "none";
+    x[i].style.boxShadow = "none";
     
 }
 }
