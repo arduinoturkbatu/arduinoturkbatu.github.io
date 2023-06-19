@@ -504,10 +504,10 @@ body {
                 position: absolute;
                 z-index: 120;
                 top: -5px;
-                right: -200px;
+                right: 0;
                 font-size: 2rem;
                 font-family: 'Caveat', cursive;
-                width: 100%;
+                width: auto;
 
                 &::before {
                     display: inline-block;
@@ -656,7 +656,7 @@ body {
 
                         i {
                             font-size: 1.45rem;
-                            color: var(--primary);
+                            color: var(--secondary);
                         }
 
                         p {
@@ -1238,6 +1238,14 @@ footer {
         }
     } 
 
+    main > .row-container {
+        padding-left: 20px !important;
+    }
+
+    .about-section .row-container {
+        margin-left: 0 !important;
+    }
+
     .row-container {
         flex-direction: column !important;
 
@@ -1245,7 +1253,7 @@ footer {
             width: 100%;
 
             .cards {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 

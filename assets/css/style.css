@@ -465,10 +465,10 @@ body .row-container .img-container span.itsme {
   position: absolute;
   z-index: 120;
   top: -5px;
-  right: -200px;
+  right: 0;
   font-size: 2rem;
   font-family: "Caveat", cursive;
-  width: 100%;
+  width: auto;
 }
 body .row-container .img-container span.itsme::before {
   display: inline-block;
@@ -603,7 +603,7 @@ body .about-section .row-container > div .cards .s-card {
 }
 body .about-section .row-container > div .cards .s-card i {
   font-size: 1.45rem;
-  color: var(--primary);
+  color: var(--secondary);
 }
 body .about-section .row-container > div .cards .s-card p {
   margin: 0;
@@ -1095,6 +1095,12 @@ footer button.debug {
     transform: rotate(-45deg) !important;
     border-radius: 2px;
   }
+  main > .row-container {
+    padding-left: 20px !important;
+  }
+  .about-section .row-container {
+    margin-left: 0 !important;
+  }
   .row-container {
     flex-direction: column !important;
   }
@@ -1102,7 +1108,7 @@ footer button.debug {
     width: 100%;
   }
   .row-container > div .cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .row-container .content-container {
     width: 100% !important;
