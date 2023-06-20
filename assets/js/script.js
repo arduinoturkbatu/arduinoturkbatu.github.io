@@ -1,3 +1,14 @@
+let scrollTop;
+var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+const moyCursor = document.getElementById('cursor');
+
+
+
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
   }
@@ -170,9 +181,9 @@ function getCursor(event) {
   let x = event.clientX;
   let y = event.clientY;
 
-  const moyCursor = document.getElementById('cursor');
-  moyCursor.style.top = (y - 50%document.body.clientHeight) + "px";
-  moyCursor.style.left = (x - 50%document.body.clientWidth) + "px";
+
+  moyCursor.style.top = y + "px";
+  moyCursor.style.left = x + "px";
 }
 
 function debugMode() {
@@ -185,6 +196,17 @@ function debugMode() {
     x[i].style.filter = "none";
     x[i].style.backdropFilter = "none";
     x[i].style.boxShadow = "none";
-    
+  }
 }
+
+document.addEventListener('scroll',getScrolled);
+
+function getScrolled() {
+  scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+  height = Math.max( body.scrollHeight, body.offsetHeight, 
+    html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+    moyCursor.style.background = `radial-gradient(closest-side, var(--background) 79%, transparent 80% 100%),
+    conic-gradient(var(--primary) `+(((scrollTop / height) * 100))+`%, rgba(255,255,255,0.2) 0)`;
 }
