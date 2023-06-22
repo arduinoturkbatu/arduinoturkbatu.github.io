@@ -21,6 +21,17 @@
         <h1 class="sectionTitle">&blacktriangleright;changelog</h1>
         <ul>
             <li>
+                <b>&beta;.4.3</b><br/>
+                <ol>
+                    <li>Fixed: Now the new cursor's percentage shows the true one.</li>
+                    <li>A new Resume button added to the nav.</li>
+                    <li>Buttons are now a little detailed.</li>
+                    <li>Fixed: Skill cards sizing on mobile.</li>
+                    <li>Now the latest version will be deployed in <code>script.js</code> file.</li>
+                    <li>Skype button added to <a href="#contact">#Contact</a></li>
+                </ol>
+            </li>
+            <li>
                 <b>&beta;.4.2</b><br/>
                 <ol>
                     <li>A new cursor added.</li>
@@ -181,7 +192,7 @@
         <div class="innerNav">
             <a href="#" class="title" translate="no"><span><div class="img-container">
                 <img src="assets/images/favicon.png" alt="Avatar">
-            </div></span> Batu Akyar <sup onclick="document.getElementById('changelogModal').classList.add('show')">v/<span class="sectionTitle">&beta;.4.2</span></sup></a>
+            </div></span> Batu Akyar <sup onclick="document.getElementById('changelogModal').classList.add('show')">v/<span class="sectionTitle" id="latestVer">SCRIPT</span></sup></a>
             <div class="links">
                 <input type="checkbox" name="menuOpener" id="menuOpener">
                 <label for="menuOpener">
@@ -194,6 +205,7 @@
                     <a href="#works"><span>02.</span>works</a>
                     <a href="#blog"><span>03.</span>blog</a>
                     <a href="#contact"><span>04.</span>contact me</a>
+                    <a href="assets/pdf/resume.pdf" class="btn" target="_blank">Resume</a>
                 </div>
                 <a href=""><label for="options" style="cursor: pointer;">&blacktriangledown;</label></a>
             </div>
@@ -459,6 +471,7 @@
                         <li>
                             <span class="sectionTitle"><span class="emoji">💬</span></span>
                             <a href="https://t.me/itsbatuakyr" target="_blank">t.me/itsbatuakyr</a>
+                            <a href="https://join.skype.com/invite/JjWY5SbBZmlW" target="_blank" style="padding-left: 1.5rem;">live:batuakyar07</a>
                         </li>
                     </ul>
                 </div>
@@ -489,7 +502,7 @@
 
     <footer>
         <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">Batu Akyar</span><sup><abbr title="The website (batuakyar.vercel.app)">?</abbr></sup> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/arduinoturkbatu/">Arduino Türk Batu</a> is licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
-        Version &beta;.4.2 <span class="sectionTitle">|</span> <a href="#changelogModal" onclick="document.getElementById('changelogModal').classList.add('show')">See Changelog</a>
+        Version <span id="latestVer">SCRIPT</span> <span class="sectionTitle">|</span> <a href="#changelogModal" onclick="document.getElementById('changelogModal').classList.add('show')">See Changelog</a>
         <div style="margin-top: 10px;gap:5px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
             Deployed by
             <a href="https://vercel.com" target="_blank">

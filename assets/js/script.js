@@ -7,6 +7,8 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 const moyCursor = document.getElementById('cursor');
 
+var ver = "&beta;.4.3";
+
 
 
 function googleTranslateElementInit() {
@@ -208,5 +210,9 @@ function getScrolled() {
     html.clientHeight, html.scrollHeight, html.offsetHeight );
 
     moyCursor.style.background = `radial-gradient(closest-side, var(--background) 79%, transparent 80% 100%),
-    conic-gradient(var(--primary) `+(((scrollTop / height) * 100))+`%, rgba(255,255,255,0.2) 0)`;
+    conic-gradient(var(--primary) `+((scrollTop / height) * 135)+`%, var(--white4) 0)`;
+}
+
+for (let i = 0; i < document.querySelectorAll("#latestVer").length; i++) {
+  document.querySelectorAll("#latestVer")[i].innerHTML = ver;
 }
