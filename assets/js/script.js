@@ -7,7 +7,7 @@ var height = Math.max( body.scrollHeight, body.offsetHeight,
 
 const moyCursor = document.getElementById('cursor');
 
-var ver = "&beta;.4.3";
+var ver = "&beta;.4.4";
 
 
 
